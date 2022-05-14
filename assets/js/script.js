@@ -132,7 +132,7 @@ function generatePassword() {
 
   //loop for random selection ----------------------------------------
   for (var i = 0; i < passwordLength; i++) {
-    var allInput = userInput[Math.floor(math.random() * userInput.length)];
+    var allInput = userInput[Math.floor(Math.random() * userInput.length)];
     passwordContainer.push(allInput);
     console.log(allInput);
   }
