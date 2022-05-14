@@ -61,7 +61,7 @@ function generatePassword() {
 
   //if no user input ----------------------------------------
   if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
-    userInput = alert("You must choose a criteria");
+    userInput = alert("You must choose a criteria!");
 
     // 4 confirmed options ----------------------------------
   } else if (confirmLower && confirmUpper && confirmNumber && confirmSpecial) {
@@ -138,6 +138,7 @@ function generatePassword() {
   }
 
   //return generated password --------------------------------------
+  
   var password = passwordContainer.join("");
   console.log("Your new password is: " + password);
   return password;
